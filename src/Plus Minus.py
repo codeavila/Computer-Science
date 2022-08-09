@@ -20,43 +20,32 @@ def plus_minus_v2(__getitem__):
     :param __getitem__:
     :return:
     """
-    try:
-        count_items = len(__getitem__)
-        items_positive = 0
-        items_negative = 0
-        items_zero = 0
 
-        sum_positive = 0
-        sum_negative = 0
-        sum_zero = 0
+    count_items = len(__getitem__)
+    items_positive = 0
+    items_negative = 0
+    items_zero = 0
 
-        # print("count_items => ", count_items)
-        for item in __getitem__:
-            if item > 0:
-                items_positive = items_positive + 1
-            elif item == 0:
-                items_zero = items_zero + 1
-            else:
-                items_negative = items_negative + 1
+    sum_positive = 0
+    sum_negative = 0
+    sum_zero = 0
 
-        print("items_positive => ", items_positive)
-        print("items_negative => ", items_negative)
-        print("items_zero => ", items_zero)
+    # print("count_items => ", count_items)
+    for item in __getitem__:
+        if item > 0:
+            items_positive = items_positive + 1
+        elif item == 0:
+            items_zero = items_zero + 1
+        else:
+            items_negative = items_negative + 1
 
-        sum_positive = Decimal(items_positive/count_items).__round__(6)
-        sum_negative = Decimal(items_negative / count_items).__round__(6)
-        sum_zero = Decimal(items_zero / count_items).__round__(6)
+    sum_positive = Decimal(items_positive / count_items).__round__(6)
+    sum_negative = Decimal(items_negative / count_items).__round__(6)
+    sum_zero = Decimal(items_zero / count_items).__round__(6)
 
-        # sum_positive = Decimal(items_positive/6)
-        # sum_negative = Decimal(items_negative / 6)
-        # sum_zero = Decimal(items_zero / 6)
-
-        print("sum_positive => ", sum_positive)
-        print("sum_negative => ", sum_negative)
-        print("sum_zero => ", sum_zero)
-    except NameError:
-        print(NameError)
-
+    print("sum_positive => ", sum_positive)
+    print("sum_negative => ", sum_negative)
+    print("sum_zero => ", sum_zero)
 
 
 plus_minus_v2(arr_v2)
