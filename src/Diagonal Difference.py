@@ -15,6 +15,7 @@ arr_multiple_v2 = [
 
 """
 Final method to sum the diagonal numbers from the array 
+https://www.hackerrank.com/challenges/diagonal-difference/problem?isFullScreen=true
 """
 
 
