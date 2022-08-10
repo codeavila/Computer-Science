@@ -5,6 +5,7 @@ arr_v2 = [-6, 1, 79, 17, 64, 94, 87, -77, 0, -26, 2, -94, 87, -81, -73, -28, 43,
 
 """
 Sum the total of the number zero,positive,negative and divide each one with the len of the elements of the array
+https://www.hackerrank.com/challenges/plus-minus/problem?isFullScreen=true
 """
 
 
